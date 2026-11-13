@@ -123,6 +123,11 @@ function status() {
   const nx = H[new Date().getDay()].find(r => nowMin() < r[0]);
   dot.className = 'dot off'; t.textContent = nx ? 'Fermé, ouvre à ' + hm(nx[0]) : 'Fermé, commande pour demain';
 }
+function footToday() {
+  const d = new Date().getDay();
+  $('#fToday').innerHTML = `<span class="${$('#dot').className}"></span>${esc($('#statusTxt').textContent)}`;
+  $('#fHours').textContent = DAYS[d] + ' : ' + H[d].map(r => hm(r[0]) + ' à ' + hm(r[1])).join(', ');
+}
 
 /* ---------- panier ---------- */
 let cart = [], mode = 'emporter', city = 'Argenteuil', slot = '', pay = 'cb';
@@ -362,7 +367,7 @@ function route() {
   const was = !$('#' + v).hidden;
   ['site', 'resto', 'track'].forEach(id => $('#' + id).hidden = id !== v);
   $('#demoTab').hidden = Q.get('demo') === '0';
-  status(); renderDemo();
+  status(); footToday(); renderDemo();
   if (v === 'resto') renderResto();
   if (v === 'track') renderTrack();
   if (!was) { if (v === 'site' && h.length > 1 && !h.startsWith('#/')) { const t = document.getElementById(h.slice(1)); t ? t.scrollIntoView() : scrollTo(0, 0); } else scrollTo(0, 0); }
@@ -492,4 +497,4 @@ if (matchMedia('(hover:hover) and (pointer:fine)').matches) {
 }
 
 renderAll();
-setInterval(() => { status(); }, 60000);
+setInterval(() => { status(); footToday(); }, 60000);

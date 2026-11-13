@@ -34,8 +34,10 @@
 <section class="hero" id="accueil">
   <div class="wrap">
     <div>
-      <div class="status" aria-live="polite"><span class="dot" id="dot"></span><span id="statusTxt">…</span></div>
-      <div class="brandline"><svg aria-hidden="true"><use href="#lg"/></svg><span>Sushi Thaï<small>Argenteuil, depuis 2017</small></span></div>
+      <div class="hero-top">
+        <div class="status" aria-live="polite"><span class="dot" id="dot"></span><span id="statusTxt">…</span></div>
+        <span class="since">Restaurant thaï &amp; japonais</span>
+      </div>
       <h1 class="mega" aria-label="Sushi Thaï : thaï, sushi, crousty. Fait maison.">
         <span class="kick" aria-hidden="true">Fait maison</span>
         <span class="l1" aria-hidden="true">Thaï.</span>
@@ -97,8 +99,10 @@
 </div></section>
 
 <div class="carte-h" id="carte"><div class="wrap"><h2 class="rv"><span class="stroke">La</span> carte</h2></div></div>
-<nav class="cats" aria-label="Rubriques de la carte"><div id="catNav"></div></nav>
-<main class="wrap" id="menu"></main>
+<div class="menuzone">
+  <nav class="cats" aria-label="Rubriques de la carte"><div id="catNav"></div></nav>
+  <main class="wrap" id="menu"></main>
+</div>
 
 <div class="marquee teal" aria-hidden="true" style="margin-top:70px"><div class="track" id="mq3"></div></div>
 
@@ -137,12 +141,39 @@
 </div>
 
 <footer>
-  <div class="word" aria-hidden="true">Sushi Thaï</div>
   <div class="wrap">
-    <div><b style="color:#fff">Sushi Thaï</b> depuis 2017, Argenteuil · Mentions légales · Confidentialité · CGV</div>
-    <a href="#/restaurant">Espace restaurant</a>
-    <div class="demo">Maquette de présentation réalisée par Magar Développement. Commandes et paiements simulés.</div>
+    <div class="fcta">
+      <h2>T’as faim ?<br><span class="pink">On s’occupe du reste.</span></h2>
+      <div class="ctas"><a class="btn p big" href="#carte">Je commande 🔥</a><a class="btn o" href="tel:+33139961951">01 39 96 19 51</a></div>
+    </div>
+    <div class="fcols">
+      <div class="fbrand">
+        <a class="logo" href="#accueil" aria-label="Sushi Thaï, retour en haut"><svg aria-hidden="true"><use href="#lg"/></svg><span><b>Sushi Thaï</b><small>Argenteuil, depuis 2017</small></span></a>
+        <p>Restaurant thaï et japonais. Fait maison, wok minute, sushis roulés à la main.</p>
+        <div class="soc"><a href="https://www.instagram.com/sushithai95" target="_blank" rel="noopener" aria-label="Instagram">IG</a><a href="https://www.snapchat.com/add/sushithai95" target="_blank" rel="noopener" aria-label="Snapchat">SC</a><a href="https://www.tiktok.com/@sushithai95" target="_blank" rel="noopener" aria-label="TikTok">TT</a></div>
+      </div>
+      <div>
+        <h4>Le resto</h4>
+        <ul><li><a href="#carte">La carte</a></li><li data-f="reservations"><a href="#reserver">Réserver une table</a></li><li><a href="#infos">Infos pratiques</a></li><li data-f="club"><a href="#club">Le club</a></li></ul>
+      </div>
+      <div>
+        <h4>Nous trouver</h4>
+        <p>120 bis boulevard Jean Allemane<br>95100 Argenteuil</p>
+        <ul><li><a href="https://www.google.com/maps/dir/?api=1&destination=120+bis+boulevard+Jean+Allemane+95100+Argenteuil" target="_blank" rel="noopener">Itinéraire →</a></li><li><a href="tel:+33139961951">01 39 96 19 51</a></li></ul>
+      </div>
+      <div>
+        <h4>Aujourd’hui</h4>
+        <p class="ftoday" id="fToday"></p>
+        <p id="fHours"></p>
+      </div>
+    </div>
+    <div class="fbar">
+      <nav aria-label="Liens légaux"><span>© 2026 Sushi Thaï</span><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">CGV</a><a href="#/restaurant">Espace restaurant</a></nav>
+      <a class="made" href="https://www.magar-developpement.fr/" target="_blank" rel="noopener"><span>Site réalisé par</span><img src="assets/magar-logo-dark.svg" alt="Magar Développement" width="86" height="80"></a>
+    </div>
   </div>
+  <p class="fdemo">Maquette de présentation. Commandes et paiements simulés.</p>
+  <div class="fword" aria-hidden="true">Sushi Thaï</div>
 </footer>
 <div class="mbar"><a class="btn p big" href="#carte" id="mbarBtn">Je commande 🔥</a></div>
 </div>
