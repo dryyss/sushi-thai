@@ -1,0 +1,148 @@
+{
+  "restaurant": {
+    "name": "Sushi Thaï",
+    "since": 2017,
+    "address": "120 bis boulevard Jean Allemane, 95100 Argenteuil",
+    "phone": "+33139961951",
+    "phoneDisplay": "01 39 96 19 51",
+    "socials": {
+      "instagram": "sushithai95",
+      "snapchat": "sushithai95",
+      "tiktok": "sushithai95"
+    }
+  },
+  "hours": {
+    "_note": "Horaires de la carte imprimée, À CONFIRMER. Minutes depuis minuit. 1440 = minuit.",
+    "mon": [
+      [
+        690,
+        870
+      ],
+      [
+        1080,
+        1440
+      ]
+    ],
+    "tue": [
+      [
+        690,
+        870
+      ],
+      [
+        1080,
+        1440
+      ]
+    ],
+    "wed": [
+      [
+        690,
+        870
+      ],
+      [
+        1080,
+        1440
+      ]
+    ],
+    "thu": [
+      [
+        690,
+        870
+      ],
+      [
+        1080,
+        1440
+      ]
+    ],
+    "fri": [
+      [
+        690,
+        870
+      ],
+      [
+        1080,
+        1440
+      ]
+    ],
+    "sat": [
+      [
+        1080,
+        1440
+      ]
+    ],
+    "sun": [
+      [
+        1080,
+        1440
+      ]
+    ]
+  },
+  "ordering": {
+    "slotStepMin": 15,
+    "prepDelayMin": 20,
+    "deliveryDelayMin": 30,
+    "lastSlotBeforeCloseMin": 15,
+    "maxOrdersPerSlot": null,
+    "paused": false
+  },
+  "lunchDiscount": {
+    "enabled": true,
+    "percent": 10,
+    "minSubtotal": 16,
+    "takeawayOnly": true,
+    "lunchServiceOnly": true
+  },
+  "delivery": {
+    "enabled": true,
+    "zones": [
+      {
+        "city": "Argenteuil",
+        "postcodes": [
+          "95100"
+        ],
+        "fee": 2.5,
+        "freeFrom": 15
+      },
+      {
+        "city": "Sannois",
+        "postcodes": [
+          "95110"
+        ],
+        "fee": 2.5,
+        "freeFrom": 15
+      },
+      {
+        "city": "Saint-Gratien",
+        "postcodes": [
+          "95210"
+        ],
+        "fee": 2.5,
+        "freeFrom": 15
+      },
+      {
+        "city": "Bezons",
+        "postcodes": [
+          "95870"
+        ],
+        "fee": 2.5,
+        "freeFrom": null
+      },
+      {
+        "city": "Cormeilles-en-Parisis",
+        "postcodes": [
+          "95240"
+        ],
+        "fee": 2.5,
+        "freeFrom": null
+      },
+      {
+        "city": "Ermont",
+        "postcodes": [
+          "95120"
+        ],
+        "fee": 2.5,
+        "freeFrom": null
+      }
+    ],
+    "_note": "Frais et seuils À CONFIRMER"
+  }
+}

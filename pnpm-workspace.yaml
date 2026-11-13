@@ -1,0 +1,6 @@
+minimumReleaseAgeExclude:
+  - react-email@6.11.12
+allowBuilds:
+  esbuild: true
+  sharp: true
+  unrs-resolver: true

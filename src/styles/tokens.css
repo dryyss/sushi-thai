@@ -1,0 +1,17 @@
+/* Tokens du design system (docs/spec.md §6.1). Complétés en phase 2. */
+@theme {
+  --color-bg: #0d0a0d;
+  --color-brick: #1c141b;
+  --color-card: #181218;
+  --color-card-2: #221a22;
+  --color-line: #33263a;
+  --color-magenta: #e5087f;
+  --color-magenta-2: #ff3fa4;
+  --color-ink: #ffffff;
+  --color-muted: #c9bbc6;
+  --color-pill: #ffffff;
+  --color-pill-ink: #111111;
+  --color-teal: #33c3cc;
+  --color-ok: #4cc88a;
+  --color-warn: #f2a54a;
+}

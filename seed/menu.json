@@ -1,0 +1,925 @@
+{
+  "categories": [
+    {
+      "slug": "formules",
+      "name": "Formules",
+      "subtitle": "Le bon plan pour un repas complet.",
+      "items": [
+        {
+          "name": "Formule Pattaya",
+          "price": 13.9,
+          "description": "1 wok ou plat thaï (hors signature), 2 nems ou 2 brochettes yakitori ou 2 crevettes tempura, 1 boisson 33 cl.",
+          "options": [
+            {
+              "name": "Ton plat",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Khao pad",
+                  "extra": 0
+                },
+                {
+                  "label": "Pad krapao",
+                  "extra": 0
+                },
+                {
+                  "label": "Pad thaï",
+                  "extra": 0
+                },
+                {
+                  "label": "Sel et poivre",
+                  "extra": 0
+                },
+                {
+                  "label": "Poulet ou bœuf thaï",
+                  "extra": 0
+                },
+                {
+                  "label": "Curry rouge",
+                  "extra": 0
+                },
+                {
+                  "label": "Curry vert",
+                  "extra": 0
+                },
+                {
+                  "label": "Poulet caramel",
+                  "extra": 0
+                },
+                {
+                  "label": "Riz cantonais",
+                  "extra": 0
+                },
+                {
+                  "label": "Wok composé",
+                  "extra": 0
+                }
+              ]
+            },
+            {
+              "name": "Accompagnement",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "2 nems poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "2 nems crevette",
+                  "extra": 0
+                },
+                {
+                  "label": "2 brochettes yakitori",
+                  "extra": 0
+                },
+                {
+                  "label": "2 crevettes tempura",
+                  "extra": 0
+                }
+              ]
+            },
+            {
+              "name": "Boisson 33 cl",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Coca-Cola",
+                  "extra": 0
+                },
+                {
+                  "label": "Coca-Cola zéro",
+                  "extra": 0
+                },
+                {
+                  "label": "Ice Tea",
+                  "extra": 0
+                },
+                {
+                  "label": "Oasis",
+                  "extra": 0
+                }
+              ]
+            },
+            {
+              "name": "Dessert",
+              "type": "one",
+              "required": false,
+              "choices": [
+                {
+                  "label": "Mochi",
+                  "extra": 3
+                },
+                {
+                  "label": "Nems chocolat",
+                  "extra": 3
+                },
+                {
+                  "label": "Tiramisu",
+                  "extra": 3
+                },
+                {
+                  "label": "Boule de coco",
+                  "extra": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Menu enfant",
+          "price": 7.9,
+          "description": "Mini riz thaï cantonais ou 3 fingers de poulet, 1 jus et 1 compote.",
+          "options": [
+            {
+              "name": "Le plat",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Mini riz thaï cantonais",
+                  "extra": 0
+                },
+                {
+                  "label": "3 fingers de poulet",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mix Thaï",
+          "price": 7.9,
+          "pieces": 8,
+          "description": "2 nems poulet, 2 tempura, 1 brochette de poulet thaï, 3 gyozas."
+        }
+      ]
+    },
+    {
+      "slug": "wok",
+      "name": "Compose ton wok",
+      "priceTag": "10€",
+      "subtitle": "Ton wok, comme tu l’aimes.",
+      "builder": true,
+      "items": [
+        {
+          "name": "Compose ton wok",
+          "price": 10,
+          "description": "Base, protéine, légumes, sauce, topping.",
+          "options": [
+            {
+              "name": "1. Ta base",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Riz thaï",
+                  "extra": 0
+                },
+                {
+                  "label": "Nouilles thaï",
+                  "extra": 0
+                },
+                {
+                  "label": "Pad thaï",
+                  "extra": 0
+                },
+                {
+                  "label": "Nouilles japonaises (udon)",
+                  "extra": 0
+                }
+              ]
+            },
+            {
+              "name": "2. Ta protéine",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Bœuf",
+                  "extra": 0
+                },
+                {
+                  "label": "Dinde",
+                  "extra": 0
+                },
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                },
+                {
+                  "label": "Saumon",
+                  "extra": 0
+                }
+              ]
+            },
+            {
+              "name": "3. Tes légumes",
+              "type": "multi",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Champignons noirs",
+                  "extra": 0
+                },
+                {
+                  "label": "Petits pois",
+                  "extra": 0
+                },
+                {
+                  "label": "Épi de maïs",
+                  "extra": 0
+                },
+                {
+                  "label": "Poivrons",
+                  "extra": 0
+                },
+                {
+                  "label": "Soja",
+                  "extra": 0
+                },
+                {
+                  "label": "Oignons",
+                  "extra": 0
+                },
+                {
+                  "label": "Carottes",
+                  "extra": 0
+                },
+                {
+                  "label": "Cœur de bambou",
+                  "extra": 0
+                },
+                {
+                  "label": "Ananas",
+                  "extra": 0
+                }
+              ],
+              "max": 3
+            },
+            {
+              "name": "4. Ta sauce",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Piquante",
+                  "extra": 0
+                },
+                {
+                  "label": "Thaï",
+                  "extra": 0
+                },
+                {
+                  "label": "Saté",
+                  "extra": 0
+                },
+                {
+                  "label": "Curry",
+                  "extra": 0
+                },
+                {
+                  "label": "Soja",
+                  "extra": 0
+                },
+                {
+                  "label": "Crème fraîche",
+                  "extra": 0
+                },
+                {
+                  "label": "Aigre-douce",
+                  "extra": 0
+                },
+                {
+                  "label": "Caramel",
+                  "extra": 0
+                }
+              ]
+            },
+            {
+              "name": "5. Ton topping",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Oignons frits",
+                  "extra": 0
+                },
+                {
+                  "label": "Graines de sésame",
+                  "extra": 0
+                },
+                {
+                  "label": "Cacahuètes",
+                  "extra": 0
+                },
+                {
+                  "label": "Ciboulette",
+                  "extra": 0
+                },
+                {
+                  "label": "Menthe",
+                  "extra": 0
+                },
+                {
+                  "label": "Gingembre",
+                  "extra": 0
+                },
+                {
+                  "label": "Coriandre",
+                  "extra": 0
+                }
+              ]
+            },
+            {
+              "name": "Suppléments",
+              "type": "multi",
+              "required": false,
+              "choices": [
+                {
+                  "label": "Viande en plus",
+                  "extra": 1.5
+                },
+                {
+                  "label": "Légume en plus",
+                  "extra": 0.5
+                },
+                {
+                  "label": "Œuf",
+                  "extra": 1
+                },
+                {
+                  "label": "Gruyère",
+                  "extra": 1
+                },
+                {
+                  "label": "Assaisonnement",
+                  "extra": 0.5
+                }
+              ],
+              "max": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "plats-thai",
+      "name": "Plats thaï",
+      "priceTag": "10€90",
+      "items": [
+        {
+          "name": "Khao pad",
+          "price": 10.9,
+          "description": "Riz sauté aux œufs, petits pois, carottes, oignons, riz thaï.",
+          "options": [
+            {
+              "name": "Viande au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Bœuf",
+                  "extra": 0
+                },
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                },
+                {
+                  "label": "Végétarien",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pad krapao",
+          "price": 10.9,
+          "description": "Sauté au basilic, poivrons, oignons, riz thaï.",
+          "options": [
+            {
+              "name": "Viande au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Bœuf",
+                  "extra": 0
+                },
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                },
+                {
+                  "label": "Végétarien",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pad kapao",
+          "price": 10.9,
+          "description": "Sauté de bœuf aux oignons, riz thaï."
+        },
+        {
+          "name": "Pad thaï",
+          "price": 10.9,
+          "description": "Nouilles sautées aux œufs et soja, poivrons, carottes, oignons.",
+          "options": [
+            {
+              "name": "Viande au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Bœuf",
+                  "extra": 0
+                },
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                },
+                {
+                  "label": "Végétarien",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sel et poivre",
+          "price": 10.9,
+          "description": "Riz thaï, crevettes ou poulet pané.",
+          "options": [
+            {
+              "name": "Au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Poulet ou bœuf thaï",
+          "price": 10.9,
+          "description": "Riz thaï, poivrons, oignons, champignons noirs, sauce thaï.",
+          "options": [
+            {
+              "name": "Au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Bœuf",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Curry rouge",
+          "price": 10.9,
+          "description": "Lait de coco, poivrons, tomates cerises, cœur de bambou, oignons.",
+          "options": [
+            {
+              "name": "Viande au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Bœuf",
+                  "extra": 0
+                },
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                },
+                {
+                  "label": "Végétarien",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Curry vert",
+          "price": 10.9,
+          "description": "Lait de coco, poivrons, tomates cerises, cœur de bambou, courgette.",
+          "options": [
+            {
+              "name": "Viande au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Bœuf",
+                  "extra": 0
+                },
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                },
+                {
+                  "label": "Végétarien",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Poulet caramel",
+          "price": 10.9,
+          "description": "Servi avec du riz."
+        },
+        {
+          "name": "Riz cantonais",
+          "price": 10.9,
+          "description": "Le classique, généreux.",
+          "options": [
+            {
+              "name": "Viande au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Bœuf",
+                  "extra": 0
+                },
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                },
+                {
+                  "label": "Végétarien",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "signatures",
+      "name": "Signatures",
+      "subtitle": "Les plats qui ont fait la réputation de la maison.",
+      "items": [
+        {
+          "name": "Bœuf loc lac",
+          "price": 12.9,
+          "badge": "signature",
+          "description": "Bœuf caramélisé, œuf, tomates, concombre, oignons rouges, ciboulette, riz thaï rouge."
+        },
+        {
+          "name": "Dynamite",
+          "price": 11.9,
+          "badge": "signature",
+          "description": "Poulet ou crevettes crunchy, concombre, oignons rouges, ciboulette, riz thaï rouge.",
+          "options": [
+            {
+              "name": "Au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Thaï crousty",
+          "price": 11.9,
+          "badge": "signature",
+          "featured": true,
+          "description": "Poulet pané croustillant, sauce blanche maison, riz, persil, oignons frits, sauce aigre-douce ou piquante.",
+          "options": [
+            {
+              "name": "Sauce",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Aigre-douce",
+                  "extra": 0
+                },
+                {
+                  "label": "Piquante",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "accompagnements",
+      "name": "Accompagnements",
+      "items": [
+        {
+          "name": "Nems thaï (popia tod)",
+          "price": 4.9,
+          "pieces": 4,
+          "description": "Feuilles de brick farcies.",
+          "options": [
+            {
+              "name": "Garniture",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Crevette",
+                  "extra": 0
+                },
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Végétarien",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Raviolis vapeur",
+          "price": 4.9,
+          "pieces": 4,
+          "description": "Crevette."
+        },
+        {
+          "name": "Ebi fry tempura",
+          "price": 5.9,
+          "pieces": 4,
+          "description": "Crevettes façon tempura, sauce spicy."
+        },
+        {
+          "name": "Fingers",
+          "price": 4.9,
+          "pieces": 5,
+          "description": "Poulet."
+        },
+        {
+          "name": "Nems cheese",
+          "price": 4.9,
+          "pieces": 4,
+          "badge": "new",
+          "description": "Crevette, poulet ou dinde et cheese.",
+          "options": [
+            {
+              "name": "Garniture",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Crevette",
+                  "extra": 0
+                },
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                },
+                {
+                  "label": "Dinde",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dynamite",
+          "price": 6.9,
+          "pieces": 6,
+          "badge": "new",
+          "description": "Crevettes ou poulet.",
+          "options": [
+            {
+              "name": "Au choix",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Crevettes",
+                  "extra": 0
+                },
+                {
+                  "label": "Poulet",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sushis",
+      "name": "Sushis et poke",
+      "items": [],
+      "todo": "Carte sushi à saisir à réception d’une version nette : menus midi, menus solo, Duo 1, Duo 2, Family Box, rolls à la carte, signatures, poke bowls."
+    },
+    {
+      "slug": "desserts",
+      "name": "Desserts",
+      "items": [
+        {
+          "name": "Maki Nutella",
+          "price": 4.5,
+          "pieces": 6,
+          "description": "Coco ou mangue.",
+          "options": [
+            {
+              "name": "Parfum",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Coco",
+                  "extra": 0
+                },
+                {
+                  "label": "Mangue",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nems chocolat",
+          "price": 3.9,
+          "description": "Croustillants, cœur fondant."
+        },
+        {
+          "name": "Fondant chocolat",
+          "price": 3.9
+        },
+        {
+          "name": "Tiramisu",
+          "price": 3.9,
+          "description": "Parfum à demander."
+        },
+        {
+          "name": "Mango sticky rice",
+          "price": 5.9,
+          "description": "Riz gluant, mangue fraîche, lait de coco."
+        },
+        {
+          "name": "Mangue fraîche",
+          "price": 4
+        },
+        {
+          "name": "Litchi",
+          "price": 3.9
+        },
+        {
+          "name": "Boule de coco",
+          "price": 3.9,
+          "pieces": 2
+        },
+        {
+          "name": "Mochi",
+          "price": 3.9,
+          "pieces": 2,
+          "description": "Parfums à demander."
+        },
+        {
+          "name": "Tarte au daim",
+          "price": 4
+        }
+      ]
+    },
+    {
+      "slug": "boissons",
+      "name": "Boissons",
+      "items": [
+        {
+          "name": "Smoothies",
+          "price": 4.5,
+          "description": "Pinky (fraise, banane), Hawaïen (coco, ananas) ou Paradise (pomme, ananas, orange).",
+          "options": [
+            {
+              "name": "Parfum",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Pinky",
+                  "extra": 0
+                },
+                {
+                  "label": "Hawaïen",
+                  "extra": 0
+                },
+                {
+                  "label": "Paradise",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bubble tea",
+          "price": 4.5,
+          "description": "Goûts à la demande."
+        },
+        {
+          "name": "Canette 33 cl",
+          "price": 1.7,
+          "options": [
+            {
+              "name": "Boisson",
+              "type": "one",
+              "required": true,
+              "choices": [
+                {
+                  "label": "Coca-Cola",
+                  "extra": 0
+                },
+                {
+                  "label": "Coca-Cola zéro",
+                  "extra": 0
+                },
+                {
+                  "label": "Ice Tea",
+                  "extra": 0
+                },
+                {
+                  "label": "Oasis",
+                  "extra": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "San Pellegrino 50 cl",
+          "price": 2.5
+        }
+      ]
+    }
+  ]
+}

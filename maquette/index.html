@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0D0A0D">
+<title>Sushi Thaï Argenteuil · Commande en ligne</title>
+<meta name="description" content="Restaurant thaï et japonais à Argenteuil depuis 2017. Maquette de présentation.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23E5087F'/%3E%3Cpath d='M50 18c-7 0-12 7-12 15 0 9 12 22 12 22s12-13 12-22c0-8-5-15-12-15Z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Baloo+2:wght@700;800&family=Yellowtail&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="lg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#E5087F"/><circle cx="50" cy="50" r="43" fill="none" stroke="#fff" stroke-width="2.5" opacity=".9"/><path d="M50 18c-7 0-12 7-12 15 0 9 12 22 12 22s12-13 12-22c0-8-5-15-12-15Z" fill="#fff"/><path d="M50 55c-10 10-22 16-28 18M50 55c10 10 22 16 28 18M50 55c-6-9-14-14-14-24M50 55c6-9 14-14 14-24" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/></symbol>
+</defs></svg>
+
+<!-- ===================== SITE PUBLIC ===================== -->
+<div id="site">
+<header class="nav">
+  <a class="logo" href="#accueil" aria-label="Sushi Thaï, accueil">
+    <svg aria-hidden="true"><use href="#lg"/></svg>
+    <span><b>Sushi Thaï</b><small>Argenteuil, depuis 2017</small></span>
+  </a>
+  <a class="l" href="#carte">La carte</a>
+  <a class="l" href="#reserver" data-f="reservations">Réserver</a>
+  <a class="l" href="#infos">Infos</a>
+  <div class="lang" data-f="english" role="group" aria-label="Langue"><button class="on" data-lang="fr">FR</button><button data-lang="en">EN</button></div>
+  <button class="cartbtn" id="openCart" aria-label="Ouvrir le panier">Panier <span class="n" id="cartN">0</span></button>
+</header>
+
+<section class="hero" id="accueil">
+  <div class="wrap">
+    <div>
+      <div class="status" aria-live="polite"><span class="dot" id="dot"></span><span id="statusTxt">…</span></div>
+      <div class="brandline"><svg aria-hidden="true"><use href="#lg"/></svg><span>Sushi Thaï<small>Argenteuil, depuis 2017</small></span></div>
+      <h1 class="mega" aria-label="Sushi Thaï : thaï, sushi, crousty. Fait maison.">
+        <span class="kick" aria-hidden="true">Fait maison</span>
+        <span class="l1" aria-hidden="true">Thaï.</span>
+        <span class="l2 stroke" aria-hidden="true">Sushi.</span>
+        <span class="l3" aria-hidden="true">Crousty.</span>
+      </h1>
+      <p class="lead">Le wok qui croustille et les sushis roulés minute. <b>Sur place, à emporter<span data-f="delivery">, ou livré direct chez toi</span>.</b></p>
+      <div class="ctas"><a class="btn p big" href="#carte">Je commande 🔥</a><a class="btn w" href="#reserver" data-f="reservations">Réserver</a></div>
+      <a class="phone" href="tel:+33139961951">01 39 96 19 51</a>
+      <div class="addr">120 bis boulevard Jean Allemane, Argenteuil</div>
+    </div>
+    <div class="visual">
+      <svg class="ring" viewBox="0 0 200 200" aria-hidden="true"><path id="ringp" d="M100,100 m-91,0 a91,91 0 1,1 182,0 a91,91 0 1,1 -182,0" fill="none"/><text><textPath href="#ringp" textLength="566">WOK MINUTE ✦ SUSHIS ROULÉS À LA MAIN ✦ FAIT MAISON ✦ DEPUIS 2017 ✦</textPath></text></svg>
+      <div class="bowl" id="heroBowl"></div>
+      <div class="stk midi" data-f="lunchDiscount"><div><span>Le midi</span><b>−10%</b><span>dès 16 €</span><small>à emporter</small></div></div>
+      <div class="stk liv" data-f="delivery">Livraison offerte<small>dès 15 € · Argenteuil, Sannois, Saint-Gratien</small></div>
+    </div>
+  </div>
+  <nav class="rail" aria-label="Réseaux sociaux"><a href="https://www.instagram.com/sushithai95" target="_blank" rel="noopener" aria-label="Instagram">IG</a><a href="https://www.snapchat.com/add/sushithai95" target="_blank" rel="noopener" aria-label="Snapchat">SC</a><a href="https://www.tiktok.com/@sushithai95" target="_blank" rel="noopener" aria-label="TikTok">TT</a></nav>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="mq1"></div></div>
+<div class="marquee alt" aria-hidden="true"><div class="track" id="mq2"></div></div>
+
+<section class="punch"><div class="wrap">
+  <p class="rv">Depuis 2017,</p>
+  <p class="rv s">on cuisine tout minute</p>
+  <p class="rv"><span class="pink">Wok</span> qui claque.</p>
+  <p class="rv"><span class="stroke">Sushis</span> roulés main.</p>
+  <p class="rv q">Une fois que t’as goûté, <b>tu reviens.</b></p>
+</div></section>
+
+<section class="spot" id="crousty"><div class="wrap">
+  <div class="pic rv" id="spotPic"></div>
+  <div class="rv d1">
+    <span class="kick">La signature</span>
+    <h2>Thaï<br>crousty<small>Le crousty, version thaï.</small></h2>
+    <p>Poulet pané <strong>ultra croustillant</strong>, sauce blanche maison, riz, persil, oignons frits. Avec sa sauce aigre-douce ou piquante.</p>
+    <button class="btn p big" id="spotBtn">Je le veux 🔥</button>
+  </div>
+</div></section>
+
+<section class="how"><div class="wrap">
+  <h2 class="sec-t rv">Commander,<br><span class="pink">c’est simple</span></h2>
+  <p class="sec-s rv">Trois étapes. Quelques minutes. Et ton plat t’attend.</p>
+  <div class="hsteps">
+    <div class="hstep rv"><div class="n" aria-hidden="true">1</div><h3>Choisis</h3><p>Ton plat thaï, <span data-f="wokBuilder">ton wok composé </span>ou ta box sushi, directement sur la carte.</p></div>
+    <div class="hstep rv d1"><div class="n" aria-hidden="true">2</div>
+      <h3 data-f="delivery">Emporte ou fais-toi livrer</h3><p data-f="delivery">Retrait au resto, ou livraison offerte dès 15 € à Argenteuil, Sannois et Saint-Gratien.</p>
+      <h3 data-nf="delivery">Choisis ton créneau</h3><p data-nf="delivery">Dis-nous à quelle heure tu passes. Ta commande est prête quand tu arrives.</p></div>
+    <div class="hstep rv d2"><div class="n" aria-hidden="true">3</div><h3>Régale-toi</h3><p>Paie en ligne ou sur place. On cuisine minute, tu n’as plus qu’à attendre la première bouchée.</p></div>
+  </div>
+  <div class="facts rv">
+    <div class="fact"><b data-count="2017">2017</b><span>On cuisine depuis</span></div>
+    <div class="fact"><b>7/7</b><span>Ouvert tous les soirs</span></div>
+    <div class="fact" data-f="delivery"><b data-count="3">3</b><span>Villes livrées gratuitement</span></div>
+    <div class="fact" data-f="lunchDiscount"><b>−10%</b><span>Le midi à emporter</span></div>
+  </div>
+</div></section>
+
+<div class="carte-h" id="carte"><div class="wrap"><h2 class="rv"><span class="stroke">La</span> carte</h2></div></div>
+<nav class="cats" aria-label="Rubriques de la carte"><div id="catNav"></div></nav>
+<main class="wrap" id="menu"></main>
+
+<div class="marquee teal" aria-hidden="true" style="margin-top:70px"><div class="track" id="mq3"></div></div>
+
+<div class="wrap">
+  <section class="club rv" id="club" data-f="club">
+    <div><h2>Le club<br>Sushi Thaï</h2><p>Les nouveautés avant tout le monde, les offres du moment, et une offre de bienvenue sur ta première commande en ligne. Pas de spam, promis.</p></div>
+    <form id="clubForm"><input type="email" required placeholder="Ton e-mail" aria-label="Ton e-mail" autocomplete="email"><button class="btn k" type="submit">Je rejoins</button></form>
+  </section>
+
+  <section class="block" id="reserver" data-f="reservations">
+    <h2 class="rv">On vient<br><span class="pink">se faire plaisir</span></h2>
+    <p class="sub">Réserve ta table. Salle climatisée, accessible PMR. Un anniversaire, un événement privé ? Dis-le-nous dans le message.</p>
+    <div class="panel" style="margin-top:20px">
+      <form class="res" id="resForm">
+        <label>Date<input type="date" required id="rDate"></label>
+        <label>Heure<select required id="rTime"></select></label>
+        <label>Personnes<select id="rPers"></select></label>
+        <label>Nom<input required id="rName" autocomplete="name"></label>
+        <label>Téléphone<input required id="rTel" type="tel" autocomplete="tel"></label>
+        <label style="grid-column:1/-1">Message (facultatif)<textarea rows="2" id="rMsg" placeholder="Anniversaire, chaise bébé, événement privé…"></textarea></label>
+        <div style="grid-column:1/-1"><button class="btn p" type="submit">Envoyer la demande</button></div>
+      </form>
+      <div class="msg" id="resMsg" hidden></div>
+    </div>
+  </section>
+
+  <section class="block" id="infos">
+    <h2 class="rv">Infos pratiques</h2>
+    <p class="sub">120 bis boulevard Jean Allemane, 95100 Argenteuil · <a href="tel:+33139961951">01 39 96 19 51</a> · <a href="https://www.google.com/maps/dir/?api=1&destination=120+bis+boulevard+Jean+Allemane+95100+Argenteuil" target="_blank" rel="noopener">Itinéraire</a></p>
+    <div class="infos">
+      <div class="panel"><h3>Horaires</h3><div class="hours" id="hours"></div></div>
+      <div class="panel"><div data-f="delivery"><h3>Livraison</h3><p style="margin:0 0 18px">Offerte dès 15 € à Argenteuil, Sannois et Saint-Gratien. Frais réduits pour les villes alentour.</p></div><h3>Paiement</h3><div class="chips"><span>Carte bancaire</span><span>Apple Pay</span><span>Google Pay</span><span>Espèces</span><span>Chèques</span><span>Titres-restaurant</span></div></div>
+      <div class="panel"><h3>Sur place</h3><div class="chips"><span>Accès PMR</span><span>Climatisation</span><span>Wi-Fi gratuit</span><span>Événements privés</span></div><h3 style="margin-top:18px">Suis-nous</h3><div class="soc"><a href="https://www.instagram.com/sushithai95" target="_blank" rel="noopener" aria-label="Instagram">IG</a><a href="https://www.snapchat.com/add/sushithai95" target="_blank" rel="noopener" aria-label="Snapchat">SC</a><a href="https://www.tiktok.com/@sushithai95" target="_blank" rel="noopener" aria-label="TikTok">TT</a>sushithai95</div></div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="word" aria-hidden="true">Sushi Thaï</div>
+  <div class="wrap">
+    <div><b style="color:#fff">Sushi Thaï</b> depuis 2017, Argenteuil · Mentions légales · Confidentialité · CGV</div>
+    <a href="#/restaurant">Espace restaurant</a>
+    <div class="demo">Maquette de présentation réalisée par Magar Développement. Commandes et paiements simulés.</div>
+  </div>
+</footer>
+<div class="mbar"><a class="btn p big" href="#carte" id="mbarBtn">Je commande 🔥</a></div>
+</div>
+
+<!-- ===================== CONFIRMATION ET SUIVI ===================== -->
+<div id="track" class="page" hidden><div class="wrap" id="trackBody"></div></div>
+
+<!-- ===================== ESPACE RESTAURANT ===================== -->
+<div id="resto" hidden>
+  <div class="rtop">
+    <h1>Espace restaurant</h1>
+    <button class="btn w" id="soundBtn" style="font-size:18px;padding:10px 16px 8px"></button>
+    <button class="btn p" id="simBtn" style="font-size:18px;padding:10px 16px 8px">Simuler une commande</button>
+    <a class="btn o" href="#accueil" style="font-size:18px;padding:10px 16px 8px">Voir le site</a>
+  </div>
+  <div class="tabs" id="rTabs" role="tablist"></div>
+  <div class="rbody" id="rBody"></div>
+</div>
+
+<!-- ===================== VOLETS, FENÊTRES ===================== -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Panier">
+  <div class="dh"><h2>Ta commande</h2><button class="x" data-close aria-label="Fermer">✕</button></div>
+  <div class="db" id="cartBody"></div>
+  <div class="df" id="cartFoot"></div>
+</aside>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="dh"><h2 id="mTitle"></h2><button class="x" data-close aria-label="Fermer">✕</button></div>
+  <div class="mb" id="mBody"></div>
+  <div class="df"><button class="btn p" style="width:100%" id="mAdd"></button></div>
+</div>
+<button class="demo-tab" id="demoTab" aria-label="Ouvrir le panneau du devis">Devis · <span id="demoPlan"></span></button>
+<aside class="drawer left" id="demo" aria-label="Formule et fonctionnalités">
+  <div class="dh"><h2>Le devis</h2><button class="x" data-close aria-label="Fermer">✕</button></div>
+  <div class="db" id="demoBody"></div>
+  <div class="df" id="demoFoot"></div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
