@@ -357,20 +357,25 @@ const mq = (id, list) => { const a = list.filter(Boolean).map(t => `<span>${t}</
 function applyFlags() {
   $$('[data-f]').forEach(e => e.hidden = !on(e.dataset.f));
   $$('[data-nf]').forEach(e => e.hidden = on(e.dataset.nf));
+  $('#s2t').textContent = on('delivery') ? 'Emporte ou fais-toi livrer' : 'Donne ton heure';
+  $('#s2p').textContent = on('delivery')
+    ? `Donne ton heure de retrait, ou fais-toi livrer${NB}: c’est offert dès 15${NB}€ à Argenteuil, Sannois et Saint-Gratien.`
+    : 'Dis-nous à quelle heure tu passes. Ta commande est prête quand tu arrives.';
   mq('#mq1', ['Fait maison', 'Depuis 2017', 'Wok minute', on('delivery') && 'Livraison offerte', 'Sushis roulés à la main', on('lunchDiscount') && 'Le midi −10' + NB + '%']);
   mq('#mq2', ['Thaï crousty', 'Bœuf loc lac', 'Dynamite', 'Pad thaï', 'Curry rouge', 'Mango sticky rice']);
   mq('#mq3', ['Je commande', 'À emporter', on('delivery') && 'En livraison', 'Sans attendre', 'Paiement en ligne']);
   if (st.club) $('#clubForm').innerHTML = '<p class="disp" style="font-size:30px;margin:0">Bienvenue dans le club 🔥</p>';
 }
 function route() {
-  const h = location.hash, v = h.startsWith('#/restaurant') ? 'resto' : h.startsWith('#/commande/') ? 'track' : 'site';
+  const h = location.hash, v = h.startsWith('#/restaurant') ? 'resto' : h.startsWith('#/commande/') ? 'track' : h.startsWith('#/legal') ? 'legal' : 'site';
   const was = !$('#' + v).hidden;
-  ['site', 'resto', 'track'].forEach(id => $('#' + id).hidden = id !== v);
+  ['site', 'resto', 'track', 'legal'].forEach(id => $('#' + id).hidden = id !== v);
+  if (v === 'legal') { const s = document.getElementById('lg-' + (h.split('/')[2] || '')); s ? s.scrollIntoView() : scrollTo(0, 0); }
   $('#demoTab').hidden = Q.get('demo') === '0';
   status(); footToday(); renderDemo();
   if (v === 'resto') renderResto();
   if (v === 'track') renderTrack();
-  if (!was) { if (v === 'site' && h.length > 1 && !h.startsWith('#/')) { const t = document.getElementById(h.slice(1)); t ? t.scrollIntoView() : scrollTo(0, 0); } else scrollTo(0, 0); }
+  if (!was && v !== 'legal') { if (v === 'site' && h.length > 1 && !h.startsWith('#/')) { const t = document.getElementById(h.slice(1)); t ? t.scrollIntoView() : scrollTo(0, 0); } else scrollTo(0, 0); }
 }
 function renderAll() { renderMenu(); applyFlags(); renderCart(); route(); }
 

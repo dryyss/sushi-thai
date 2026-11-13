@@ -321,6 +321,18 @@ footer a:hover{color:var(--pink2)}
 .pts{background:var(--teal);color:#06262a;border-radius:18px;padding:14px 18px;font-weight:800;margin-top:16px;transform:rotate(-.8deg)}
 .pts b{font:900 30px var(--disp);display:block}
 
+/* infos légales */
+.legal .panel{margin:18px 0;scroll-margin-top:20px}
+.legal h2{font-size:clamp(34px,5vw,48px);margin-bottom:6px}
+.legal h3{font-size:22px;color:var(--pink2);margin:20px 0 8px}
+.legal p{color:var(--muted);margin:0 0 10px}
+.legal dl{display:grid;grid-template-columns:minmax(150px,max-content) 1fr;gap:8px 18px;margin:0}
+.legal dt{font-weight:800;color:#fff}
+.legal dd{margin:0;color:var(--muted)}
+.legal-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.legal-nav a{background:#fff;color:#111;border-radius:999px;padding:8px 14px 6px;font:400 18px/1 var(--disp);text-transform:uppercase;text-decoration:none}
+@media (max-width:560px){.legal dl{grid-template-columns:1fr;gap:2px}.legal dd{margin-bottom:8px}}
+
 /* espace restaurant */
 .rtop{position:sticky;top:0;z-index:30;background:#000;border-bottom:2px solid var(--pink);padding:calc(var(--sat) + 10px) 16px 10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .rtop h1{font-size:30px;margin-right:auto}

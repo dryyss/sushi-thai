@@ -429,7 +429,8 @@ Toutes les polices viennent de Google Fonts, avec des polices de secours systèm
 - [ ] Confirmation des prix de toute la carte
 - [ ] Logo en vectoriel et photos HD des plats (imprimeur)
 - [ ] Horaires exacts (le site et le flyer ne disent pas la même chose)
-- [ ] Code postal exact (95100 ou 95120)
+- [ ] Adresse exacte : 120 ou 120 bis boulevard Jean Allemane (site actuel et flyer différents), code postal 95100 ou 95120
+- [ ] Mentions légales : forme juridique, siège social et immatriculation (RCS Nanterre sur le site actuel, alors que le restaurant est dans le 95)
 - [ ] Montant de la livraison offerte et frais des villes alentour
 - [ ] Nombre de légumes inclus dans le wok
 - [ ] Accès à la fiche Google et aux réseaux sociaux

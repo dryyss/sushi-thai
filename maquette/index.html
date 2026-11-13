@@ -85,9 +85,7 @@
   <p class="sec-s rv">Trois étapes. Quelques minutes. Et ton plat t’attend.</p>
   <div class="hsteps">
     <div class="hstep rv"><div class="n" aria-hidden="true">1</div><h3>Choisis</h3><p>Ton plat thaï, <span data-f="wokBuilder">ton wok composé </span>ou ta box sushi, directement sur la carte.</p></div>
-    <div class="hstep rv d1"><div class="n" aria-hidden="true">2</div>
-      <h3 data-f="delivery">Emporte ou fais-toi livrer</h3><p data-f="delivery">Retrait au resto, ou livraison offerte dès 15 € à Argenteuil, Sannois et Saint-Gratien.</p>
-      <h3 data-nf="delivery">Choisis ton créneau</h3><p data-nf="delivery">Dis-nous à quelle heure tu passes. Ta commande est prête quand tu arrives.</p></div>
+    <div class="hstep rv d1"><div class="n" aria-hidden="true">2</div><h3 id="s2t">Emporte ou fais-toi livrer</h3><p id="s2p">Donne ton heure de retrait, ou fais-toi livrer&nbsp;: c’est offert dès 15&nbsp;€ à Argenteuil, Sannois et Saint-Gratien.</p></div>
     <div class="hstep rv d2"><div class="n" aria-hidden="true">3</div><h3>Régale-toi</h3><p>Paie en ligne ou sur place. On cuisine minute, tu n’as plus qu’à attendre la première bouchée.</p></div>
   </div>
   <div class="facts rv">
@@ -168,7 +166,7 @@
       </div>
     </div>
     <div class="fbar">
-      <nav aria-label="Liens légaux"><span>© 2026 Sushi Thaï</span><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">CGV</a><a href="#/restaurant">Espace restaurant</a></nav>
+      <nav aria-label="Liens légaux"><span>© 2026 Sushi Thaï</span><a href="#/legal/mentions">Mentions légales</a><a href="#/legal/confidentialite">Confidentialité</a><a href="#/legal/cgv">CGV</a><a href="#/restaurant">Espace restaurant</a></nav>
       <a class="made" href="https://www.magar-developpement.fr/" target="_blank" rel="noopener"><span>Site réalisé par</span><img src="assets/magar-logo-dark.svg" alt="Magar Développement" width="86" height="80"></a>
     </div>
   </div>
@@ -180,6 +178,49 @@
 
 <!-- ===================== CONFIRMATION ET SUIVI ===================== -->
 <div id="track" class="page" hidden><div class="wrap" id="trackBody"></div></div>
+
+<!-- ===================== INFORMATIONS LÉGALES ===================== -->
+<div id="legal" class="page legal" hidden><div class="wrap">
+  <a href="#accueil" class="logo" style="display:inline-flex"><svg aria-hidden="true"><use href="#lg"/></svg><span><b>Sushi Thaï</b><small>Argenteuil, depuis 2017</small></span></a>
+  <h1>Infos légales</h1>
+  <nav class="legal-nav" aria-label="Sections"><a href="#/legal/mentions">Mentions légales</a><a href="#/legal/confidentialite">Confidentialité</a><a href="#/legal/cgv">CGV</a></nav>
+
+  <section class="panel" id="lg-mentions">
+    <h2>Mentions légales</h2>
+    <h3>Éditeur du site</h3>
+    <dl>
+      <dt>Raison sociale</dt><dd>Sushi &amp; Thaï</dd>
+      <dt>Capital social</dt><dd>500&nbsp;€</dd>
+      <dt>Immatriculation</dt><dd>RCS Nanterre, SIREN 848&nbsp;000&nbsp;097</dd>
+      <dt>TVA intracommunautaire</dt><dd>FR&nbsp;24&nbsp;848&nbsp;000&nbsp;097</dd>
+      <dt>Restaurant</dt><dd>120 bis boulevard Jean Allemane, 95100 Argenteuil</dd>
+      <dt>Téléphone</dt><dd><a href="tel:+33139961951">01 39 96 19 51</a></dd>
+      <dt>Directeur de la publication</dt><dd>M. Larbi Lahmer, gérant</dd>
+    </dl>
+    <h3>Hébergement</h3>
+    <p>Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis. <a href="https://vercel.com" target="_blank" rel="noopener">vercel.com</a></p>
+    <h3>Conception et réalisation</h3>
+    <p>Magar Développement. <a href="https://www.magar-developpement.fr/" target="_blank" rel="noopener">magar-developpement.fr</a></p>
+    <h3>Propriété intellectuelle</h3>
+    <p>Les textes, visuels, logos et la charte graphique de ce site appartiennent à Sushi &amp; Thaï ou à leurs auteurs. Toute reproduction sans autorisation écrite est interdite.</p>
+  </section>
+
+  <section class="panel" id="lg-confidentialite">
+    <h2>Confidentialité</h2>
+    <p>Lorsque vous passez commande ou demandez une réservation, nous recueillons votre nom, votre téléphone, votre e-mail et, en cas de livraison, votre adresse. Ces informations servent uniquement à préparer, livrer ou confirmer votre demande et à vous contacter à son sujet.</p>
+    <p>Elles ne sont ni vendues ni cédées. Le paiement en ligne est traité par un prestataire de paiement sécurisé : vos coordonnées bancaires ne transitent jamais par nos serveurs.</p>
+    <p>Elles sont conservées le temps nécessaire au traitement de votre commande et au respect de nos obligations légales. Vous pouvez à tout moment demander à y accéder, à les corriger ou à les supprimer en appelant le restaurant au 01 39 96 19 51.</p>
+    <p>Ce site n’utilise pas de cookies publicitaires. Le panier est enregistré dans votre navigateur pour ne pas le perdre en cours de commande.</p>
+  </section>
+
+  <section class="panel" id="lg-cgv">
+    <h2>Conditions générales de vente</h2>
+    <p>Les conditions générales de vente seront publiées avant l’ouverture de la commande en ligne. Elles préciseront notamment : la prise de commande et sa confirmation, les prix (en euros, TTC), les moyens de paiement, le retrait et la livraison, l’annulation et les réclamations.</p>
+  </section>
+
+  <p class="note">Informations reprises du site actuel du restaurant, à valider avec le gérant avant la mise en ligne.</p>
+  <div class="ctas" style="margin-top:18px"><a class="btn p" href="#carte">Retour à la carte</a></div>
+</div></div>
 
 <!-- ===================== ESPACE RESTAURANT ===================== -->
 <div id="resto" hidden>
