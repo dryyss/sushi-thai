@@ -90,6 +90,7 @@ a{color:var(--pink2)}
 .stk.liv small{display:block;font:800 12px var(--text);text-transform:none}
 .rail{position:absolute;right:18px;top:50%;transform:translateY(-50%);display:grid;gap:8px;z-index:3}
 .rail a,.soc a{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:rgba(0,0,0,.6);border:1px solid var(--line);color:#fff;text-decoration:none;font:800 11px var(--text)}
+.rail a svg,.soc a svg{width:18px;height:18px;fill:currentColor;display:block}
 .rail a:hover,.soc a:hover{background:var(--pink);border-color:var(--pink)}
 @media (max-width:1240px){.rail{display:none}}
 @media (max-width:880px){
